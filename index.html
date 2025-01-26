@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <div class="display-header">
+          <h2>Calculator</h2>
+          <button id="toggle-dark-mode">🌙</button>
+        </div>
+        <div id="result">0</div>
+        <div id="temp-result"></div>
+      </div>
+      <div class="buttons" id="button-container">
+        <button class="btn btn-secondary" data-action="clear">C</button>
+        <button class="btn btn-secondary" data-value="(">(</button>
+        <button class="btn btn-secondary" data-value=")">)</button>
+        <button class="btn btn-secondary" data-action="backspace">⌫</button>
+        <button class="btn btn-default" data-value="7">7</button>
+        <button class="btn btn-default" data-value="8">8</button>
+        <button class="btn btn-default" data-value="9">9</button>
+        <button class="btn btn-primary" data-value="/">÷</button>
+        <button class="btn btn-default" data-value="4">4</button>
+        <button class="btn btn-default" data-value="5">5</button>
+        <button class="btn btn-default" data-value="6">6</button>
+        <button class="btn btn-primary" data-value="*">×</button>
+        <button class="btn btn-default" data-value="1">1</button>
+        <button class="btn btn-default" data-value="2">2</button>
+        <button class="btn btn-default" data-value="3">3</button>
+        <button class="btn btn-primary" data-value="-">-</button>
+        <button
+          class="btn btn-default"
+          data-value="0"
+          style="grid-column: span 2"
+        >
+          0
+        </button>
+        <button class="btn btn-default" data-value=".">.</button>
+        <button class="btn btn-primary" data-value="+">+</button>
+        <button class="btn btn-equals" data-action="equals">=</button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
